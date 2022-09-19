@@ -22,6 +22,38 @@ let testData = {
     expect(2).toBe(2)
   })
 
+  describe('testData tests', () => {
+
   test('The first name of the test data should be Patten', () => {
     expect(testData.firstName).toBe('Patten')
   })
+
+  test('The first name of the test data should be Patten', () => {
+    expect(testData.firstName).toBe('Patten')
+  })
+
+  test('last name should be Goforth', () => {
+    expect(testData.lastName).toBe('Goforth')
+  })
+
+
+
+})
+
+describe('formatTitle Tests', () => {
+
+
+  test('formatTitle should return a string', () => {
+    let formattedTitle = formatTitle(testData.title)
+
+    expect(typeof formattedTitle).toBe('string')
+
+  })
+
+  test('formatTitle function should format title correctly', () => {
+    let formattedTitle = formatTitle(testData.title)
+    expect(formattedTitle).toBe('Nulla Ac')
+    
+  })
+
+})
